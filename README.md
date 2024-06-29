@@ -2,6 +2,7 @@
 
 1. 
 :![Screenshot 2024-06-30 025106](https://github.com/mitraayushi/Code-Bounty/assets/116261279/3e781d4c-2096-4056-9093-b897c116ba14)
+
 2. Generate Wallet
 
 ```sh
