@@ -96,8 +96,8 @@ form input {
 }
 
 button {
-    background-color: #FFC000;
-    color:black;
+    background-color: black;
+    color:white;
     height: 50px;
     width: 250px;
     border-radius: 1.3em;
@@ -110,7 +110,7 @@ button {
 }
 
 .social-options button {
-    background-color: #FFC000;
+    background-color: white;
     height: 50px;
     width: 220px;
 }
@@ -124,8 +124,9 @@ button {
     background-color:#E3E3E3;   
 }
 a{
-    color: #FFC000;
+    color: black;
 }
+
 .signup-container p{
 
     margin-top: 2em;

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+header {
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+}
+
+header h1 {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Montserrat-ExtraBold.ttf);
+        font-weight:bold
+    }
+    color: black;
+    margin:0;
+    padding-left: 1em;
+    font-variant: small-caps;
+   
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    padding-right: 1em;
+}
+
+nav ul li {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Monsterrat-Medium.ttf);
+    }
+    font-variant: small-caps;
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+        .content {
+            display: grid;
+            grid-template-columns: 0.5fr 2fr;
+            gap: 50px;
+            padding: 50px;
+        }
+        .content .profile-pic {
+            grid-column: span 1;
+            background-color: #D9D9D9;
+            border: 2px solid;
+            border-radius: 50%; 
+            height: 200px;
+            width: 200px;
+        }
+        .content .main-info {
+            grid-column: span 1;
+            background-color: #D9D9D9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid; 
+            height: 150px;
+        }
+        .content .sub-info-1, .content .sub-info-2 {
+            background-color: #D9D9D9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid;
+            height: 200px;
+        }
