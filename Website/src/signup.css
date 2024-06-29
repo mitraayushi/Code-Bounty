@@ -63,8 +63,8 @@ nav ul li a {
     border-radius: 20px;
     margin: auto;
     margin-top: 50px;
-    column-gap: 100px;
-    width:60%
+    column-gap: 150px;
+    width:60%;
 }
 hr{
     width: 250px;
@@ -116,19 +116,20 @@ button {
 }
 .circle {
     margin: 30%;
-    margin-top: 10%;
-    width: 150px; 
-    height: 150px;
+    margin-top: 20%;
+    margin-left: 40%;
+    width: 200px; 
+    height: 200px;
     border-radius: 50%;
-    background-color:#E3E3E3;  
+    background-color:#E3E3E3;   
 }
 a{
     color: #FFC000;
 }
 .signup-container p{
 
-    margin-top: 3em;
-    margin-left: 20%;
+    margin-top: 2em;
+    margin-left: 25%;
     font: 35px Roboto;
 }
 #align{
