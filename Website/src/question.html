@@ -11,7 +11,7 @@
             <h1>CodeBounty</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/home.html">Home</a></li>
                     <li><a href="#">Explore</a></li>
                     <li><a href="#">Wallet</a></li>
                     <li><a href="#">Profile</a></li>
@@ -36,33 +36,41 @@
         <div class="questions-container">
             <h1>Questions</h1>
             <div class="search-filter">
-                <input type="text" placeholder="Search...">
-                <button class="filter-btn">Filter</button>
+              <input type="text" placeholder="Search..." />
+              <button class="filter-btn">Filter</button>
             </div>
             <div class="questions-list">
-                <div class="question-item">
-                    <div class="question-content"></div>
-                    <button class="solve-btn">Solve Challenge</button>
-                </div>
-                <div class="question-item">
-                    <div class="question-content"></div>
-                    <button class="solve-btn">Solve Challenge</button>
-                </div>
-                <div class="question-item">
-                    <div class="question-content"></div>
-                    <button class="solve-btn">Solve Challenge</button>
-                </div>
-                <div class="question-item">
-                    <div class="question-content"></div>
-                    <button class="solve-btn">Solve Challenge</button>
-                </div>
-                <div class="question-item">
-                    <div class="question-content"></div>
-                    <button class="solve-btn">Solve Challenge</button>
-                </div>
+              <div class="question-item">
+                <div class="question-content">Sum</div>
+                <button class="solve-btn" id="p1">Solve Challenge</button>
+              </div>
+              <div class="question-item">
+                <div class="question-content">Product</div>
+                <button class="solve-btn" id="p2">Solve Challenge</button>
+              </div>
+              <div class="question-item">
+                <div class="question-content">Sub</div>
+                <button class="solve-btn" id="p3">Solve Challenge</button>
+              </div>
+              <div class="question-item">
+                <div class="question-content">Two Sum</div>
+                <button class="solve-btn" id="p4">Solve Challenge</button>
+              </div>
             </div>
-        </div>
+          </div>
     </main>
-    <script src="question.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const buttons = document.querySelectorAll(".solve-btn");
+    
+          buttons.forEach((button) => {
+            button.addEventListener("click", function () {
+              // alert(`ID: ${this.id}`);
+              localStorage.setItem("problemId", `${this.id}`);
+              window.location.assign('/ide')
+            });
+          });
+        });
+      </script>
 </body>
 </html>
