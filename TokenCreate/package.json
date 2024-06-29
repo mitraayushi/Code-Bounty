@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@metaplex-foundation/mpl-candy-machine": "^6.0.1",
+    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "@metaplex-foundation/umi": "^0.9.1",
+    "@metaplex-foundation/umi-bundle-defaults": "^0.9.1",
+    "@solana/web3.js": "^1.92.3",
+    "bs58": "^5.0.0",
+    "fs": "^0.0.1-security",
+    "ts-node": "^10.9.2"
+  }
+}
