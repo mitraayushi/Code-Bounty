@@ -110,7 +110,8 @@ button {
 }
 
 .social-options button {
-    background-color: white;
+    background-color:black;
+    color: white;
     height: 50px;
     width: 220px;
 }
