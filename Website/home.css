@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.problem-of-the-day {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.problem-of-the-day h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.problem-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.problem-description {
+    background-color: #e0e0e0;
+    width: 80%;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.problem-content button {
+    background-color: #0a0a5c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.topic-wise-questions {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.topic-wise-questions h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.topics {
+    display: flex;
+    gap: 20px;
+}
+
+.topic-box {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.exchange-rate {
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+ .currency-box{
+    background-color: white;
+    height: 20px;
+    width: 50px;
+ }
+.rate-box {
+    display:grid;
+    height: 150px;
+    width: 250px;
+    margin: 20px; /* Margin inside the popup */
+    padding: 20px;
+    background-color: #ccc;
+    align-items: center;
+    border-radius: 1.2em;
+}
+
+.wallet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.rate {
+    display: grid;
+    align-items: center;
+}
+
