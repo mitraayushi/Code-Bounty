@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+}
+
+header h1 {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Montserrat-ExtraBold.ttf);
+        font-weight:bold
+    }
+    color: black;
+    margin:0;
+    padding-left: 1em;
+    font-variant: small-caps;
+   
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    padding-right: 1em;
+}
+
+nav ul li {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Monsterrat-Medium.ttf);
+    }
+    font-variant: small-caps;
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.about{
+    justify-content: center; 
+    color: black;
+    margin: 100px;
+    margin-top: 10%;
+    padding: 40px;
+    text-align:center;
+}
+.about h1{
+    margin-bottom: 60px;
+}
+.about p{
+    margin-bottom: 30px;
+    align-items: center;
+    margin-left: 320px;
+    width: 550px;
+}
+
+ button {
+    background-color:black;
+    margin-top: 0.5em;
+    height: 40px;
+    width: 150px;
+    color: white;
+    border-radius: 1em;
+}
+.about a{
+text-decoration: none;
+color: white;
+}
