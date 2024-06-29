@@ -10,39 +10,49 @@ body {
 }
 
 header {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav {
+    background: white;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1em;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
+header h1 {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Montserrat-ExtraBold.ttf);
+        font-weight:bold
+    }
+    color: black;
+    margin:0;
+    padding-left: 1em;
+    font-variant: small-caps;
+   
 }
 
-.nav-links {
+nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    padding-right: 1em;
 }
 
-.nav-links a {
+nav ul li {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Monsterrat-Medium.ttf);
+    }
+    font-variant: small-caps;
+    display: inline;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: black;
 }
-
-.container {
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 main {
     background-color: white;
     display: flex;

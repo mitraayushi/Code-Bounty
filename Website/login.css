@@ -7,6 +7,7 @@ body{
     background: linear-gradient(to right, #BEBEBE 50%, #F2F2F2 50%);
     height: 100vh;
     color: #000;
+    font-family: Arial, sans-serif;
 }
 
 header {
