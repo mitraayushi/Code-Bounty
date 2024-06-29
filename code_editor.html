@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collaborative Coding Platform</title>
+    <link rel="stylesheet" href="code_editor.css" />
+    <link rel="stylesheet" href="codemirror-5.65.16/lib/codemirror.css" />
+    <script src="codemirror-5.65.16/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="codemirror-5.65.16/theme/dracula.css" />
+    <script src="codemirror-5.65.16/addon/edit/closebrackets.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="codemirror-5.65.16/mode/clike/clike.js"></script>
+    <script src="codemirror-5.65.16/mode/python/python.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">☰</div>
+      <ul>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Contest</a></li>
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <div class="profile-icon">⚪</div>
+    </nav>
+    <div class="main-container">
+      <div class="question-section">
+        <div id="question-editor" placeholder="question-section">
+          <h2 id="p-name"></h2>
+          <div id="p-description"></div>
+        </div>
+      </div>
+      <div class="editor-section">
+        <div class="editor-container">
+          <textarea
+            id="code-editor"
+            class="CodeMirror-sizer"
+            placeholder="Write your code here..."
+          ></textarea>
+        </div>
+        <div class="controls">
+          <select id="language-select">
+            <option value="javascript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="java">Java</option>
+            <option value="Cpp">C++</option>
+            <option value="Java">Java</option>
+            <option value="Sol">Solidity</option>
+          </select>
+          <button id="submit-btn">Submit</button>
+        </div>
+        <div class="output-container">
+          <div class="output-header">
+            <span>Output</span>
+            <button id="clear-btn">Clear</button>
+          </div>
+          <pre id="output"></pre>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="scripts.js"></script> -->
+    <script>
+      var editor = CodeMirror.fromTextArea(
+        document.getElementById("code-editor"),
+        {
+          mode: "text/x-c++src",
+          theme: "dracula",
+          lineNumbers: true,
+          autoCloseBrackets: true,
+        }
+      );
+      var width = window.innerWidth;
+      // editor.setSize(0.7 * width, "500");
+      // var input = document.getElementById("input");
+      const output = document.getElementById("output");
+      const run = document.getElementById("submit-btn");
+      const languageOption = document.getElementById("language-select");
+      // var problemIdOption = document.getElementById("problemId");
+      
+      const problemId = localStorage.getItem("problemId");
+      languageOption.addEventListener("change", () => {
+        if (languageOption.value === "Java") {
+          editor.setOption("mode", "text/x-java");
+        }
+        if (languageOption.value === "Cpp") {
+          editor.setOption("mode", "text/x-c++src");
+        }
+        if (languageOption.value === "Python") {
+          editor.setOption("mode", "text/x-python");
+        }
+      });
+      // Getting all the options and panel data
+
+      run.addEventListener("click", function () {
+        console.log("==============================")
+        console.log(languageOption.value, problemId)
+        var code1 = {
+          code: editor.getValue(),
+          // input: input.value,
+          lang: languageOption.value,
+          problemId,
+        };
+        console.log(code1);
+
+        fetch("/compile", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(code1),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data,"=========================COMPILE RESPONSE====================");
+            output.textContent = data.output;
+          });
+      });
+
+      console.log(problemId);
+      // alert(problemId)
+      const options = {
+        method: "POST", // Specify the HTTP method
+        headers: {
+          "Content-Type": "application/json", // Specify the content type as JSON
+        },
+        body: JSON.stringify({ problemId }), // Convert the data to JSON
+      };
+
+      console.log(options);
+      const p_name = document.getElementById('p-name');
+      const p_description = document.getElementById('p-description');
+
+      const setTextContent = (element, content) => {
+        element.textContent = content;
+        return;
+      }
+
+      fetch("/problem_details", options)
+        .then((res) => res.json())
+        .then((problemDetails) => {
+          console.log(problemDetails);
+          const {name, description} = problemDetails;
+          setTextContent(p_name, `Question 👉 ${name}`);
+          setTextContent(p_description, description);
+        })
+        .catch((e) => {
+          console.log(e);
+          
+        });
+    </script>
+  </body>
+</html>
