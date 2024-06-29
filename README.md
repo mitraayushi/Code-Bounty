@@ -1,0 +1,1 @@
+CodeBounty is a coding platform which rewards users with CBT (CodeBounty Tokens). Users can additionally learn more about Web3, blockchain through the available basic courses, challenges and collaborations. They can interact as a community and help solve problems.
