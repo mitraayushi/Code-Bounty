@@ -27,35 +27,43 @@ npx ts-node mint.ts
 ## Website
 
 1. 
-    website/
-    │   ├── src/
-    │   │   ├── codemirror-5.65.16/
-    │   │   ├── fonts/
-    │   │   ├── backend.js
-    │   │   ├── cbt_logo.png
-    │   │   ├── code_editor.css
-    │   │   ├── code_editor.html
-    │   │   ├── home.css
-    │   │   ├── home.html
-    │   │   ├── landing.css
-    │   │   ├── landing.html
-    │   │   ├── login.css
-    │   │   ├── login.html
-    │   │   ├── profile.css
-    │   │   ├── profile.html
-    │   │   ├── question.html
-    │   │   ├── question.css
-    │   │   ├── signup.html
-    │   │   ├── signup.css
-    │   │   ├── solana_transaction.js
-    │   │   ├── solidity.js
-    │   │   ├── tezos_transaction.js
-    │   │   ├── tezon_token_check.js
-    │   │   ├── wallet.html
-    │   │   ├── wallet.css
-    │   ├── server.js
-    ├── package.json
-    └── README.md
+my-token-project/
+├── website/
+│   ├── src/
+│   │   ├── codemirror-5.65.16/
+│   │   ├── fonts/
+│   │   ├── backend.js
+│   │   ├── cbt_logo.png
+│   │   ├── code_editor.css
+│   │   ├── code_editor.html
+│   │   ├── home.css
+│   │   ├── home.html
+│   │   ├── landing.css
+│   │   ├── landing.html
+│   │   ├── login.css
+│   │   ├── login.html
+│   │   ├── profile.css
+│   │   ├── profile.html
+│   │   ├── question.html
+│   │   ├── question.css
+│   │   ├── signup.html
+│   │   ├── signup.css
+│   │   ├── solana_transaction.js
+│   │   ├── solidity.js
+│   │   ├── tezos_transaction.js
+│   │   ├── tezon_token_check.js
+│   │   ├── wallet.html
+│   │   ├── wallet.css
+│   ├── server.js
+├── TokenCreate/
+│   ├── wallet.ts
+│   ├── mint.ts
+│   ├── guideSecret.json
+|   ├── tsconfig.json
+├── package.json
+├── tsconfig.json
+└── README.md
+
 
 2. 
 "dependencies":{
