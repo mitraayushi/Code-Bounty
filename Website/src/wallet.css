@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #F2F2F2;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+}
+
+header h1 {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Montserrat-ExtraBold.ttf);
+        font-weight:bold
+    }
+    margin:0;
+    padding-left: 1em;
+    font-variant: small-caps;
+   
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    padding-right: 1em;
+}
+
+nav ul li {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Monsterrat-Medium.ttf);
+    }
+    font-variant: small-caps;
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.wallet-block{
+    display: flex;
+    column-gap: 70px;
+}
+.x{
+    display: flex;
+}
+.wallet-section {
+    background: #D9D9D9;
+    padding: 50px;
+    border-radius: 20px;
+    margin: auto;
+    column-gap: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    height: 60%;
+}
+.align{
+    margin:0 auto;
+    padding: 5em;
+    padding-top: 3em;
+}
+.form-group select{
+    padding: 5px;
+    height:35px;
+    width:200px;
+    border-radius: 10px;
+
+}
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+form button {
+    align-self: center;
+    height:30px;
+    width:90px;
+    background:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.learn-more h3 {
+    margin-top: 0;
+}
+.expandable-paragraph {
+    width: 200px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 50px; /* Initial height */
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px  #ccc;
+    border-radius: 5px;
+}
+
+.expandable-paragraph:hover {
+    max-height: 200px; /* Expanded height */
+}
+.learn-more p {
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.current-cbt {
+    background:#A5A5A5;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 1em;
+    height: 20vh;
+
+}
+
+.current-cbt div {
+    margin-bottom: 10px;
+}
+
+.current-cbt label {
+    display: inline-block;
+    margin-right: 10px;
+}
+.current-cbt button{
+    width: 80px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    height:30px;
+}
+.current-cbt input[type="text"] {
+    width: calc(60% - 10px);
+    border-radius: 20px;
+    padding: 8px;
+
+}
