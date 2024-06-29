@@ -55,14 +55,14 @@ my-token-project/
 │   │   ├── wallet.html
 │   │   ├── wallet.css
 │   ├── server.js
-├── TokenCreate/
+├── TokenCreated/
 │   ├── wallet.ts
 │   ├── mint.ts
 │   ├── guideSecret.json
-|   ├── tsconfig.json
 ├── package.json
 ├── tsconfig.json
 └── README.md
+
 
 
 2. 
