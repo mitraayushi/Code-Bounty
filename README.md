@@ -46,7 +46,7 @@ To run this project locally, follow these steps:
 
 To start the application, run:
 ```sh
-npm node server.js
+node server.js
 ```
 
 Open your browser and navigate to `http://localhost:5000` to access Socratech.
