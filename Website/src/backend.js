@@ -9,6 +9,7 @@ const readline = require('readline');
 
 const cwd = process.cwd();
 const compiler = require("compilex");
+const { compileSol } = require("./solidity");
 
 const options = { stats: true };
 compiler.init(options);
@@ -56,7 +57,7 @@ const createApp1 = () => {
         // } else
         //  {
         //if windows
-        console.log("ENTERED CPP++++++++++++++++++++")
+        console.log("ENTERED CPP++++++++++++++++++++");
         var envData = {
           OS: "windows",
           cmd: "g++",
@@ -67,10 +68,10 @@ const createApp1 = () => {
             `ACTUAL: ${data.output}\n EXPECTED: ${expectedOutput}\n\n`
           );
           if (parseFloat(data.output) === parseFloat(expectedOutput)) {
-            console.log("+++++++++++++++SUCCESS++++++++++++++++++++++")
+            console.log("+++++++++++++++SUCCESS++++++++++++++++++++++");
             res.send({ output: "✅Success Passed" });
           } else {
-            console.log("+++++++++++++++FAILED++++++++++++++++++++++")
+            console.log("+++++++++++++++FAILED++++++++++++++++++++++");
 
             res.send({ output: "❌ error in logic, try again" });
           }
@@ -151,9 +152,40 @@ const createApp1 = () => {
             }
           );
         }
+      } else if (lang === "Sol") {
+        // if (!input) {
+        //   var envData = {
+        //     OS: "windows",
+        //     cmd: "python",
+        //     options: { timeout: 10000 },
+        //   };
+        //   compiler.compilePython(envData, code, function (data) {
+        //     if (data.output) {
+        //       res.send(data);
+        //       cleanTempDirectory();
+        //     } else {
+        //       res.send({ output: "error" });
+        //     }
+        //   });
+        // } else
+        const input = {
+          language: "Solidity",
+          sources: {
+            "test.sol": {
+              content: code,
+            },
+          },
+        };
+        console.log(compileSol(input))
+        if (compileSol(input)) {
+          res.send({ output: "✅Success Passed" });
+          cleanTempDirectory();
+        }else{
+          res.send({ output: "❌ error in logic, try again" });
+        }
       }
     } catch (error) {
-      console.log("error");
+      console.log("error", error);
     }
   });
 
