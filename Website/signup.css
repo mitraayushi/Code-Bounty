@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    background: linear-gradient(to right, #BEBEBE 50%, #F2F2F2 50%);
+    height: 100vh;
+}
+header {
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+}
+
+header h1 {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Montserrat-ExtraBold.ttf);
+        font-weight:bold
+    }
+    color: black;
+    margin:0;
+    padding-left: 1em;
+    font-variant: small-caps;
+   
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    padding-right: 1em;
+}
+
+nav ul li {
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url(..\fonts\Monsterrat-Medium.ttf);
+    }
+    font-variant: small-caps;
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.signup-container {
+    display: flex;
+    justify-content:space-evenly;
+    box-shadow: 
+            0 10px 20px rgba(0, 0, 0, 0.4), /* Outer shadow */
+            inset 0 0 20px rgba(0, 0, 0, 0.4); /* Inner shadow */
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    column-gap: 100px;
+    width:60%
+}
+hr{
+    width: 250px;
+    margin-left: 18%;
+}
+
+form {
+    border: 0.1px solid rgba(54, 54, 54, 0);
+    width: 60%;
+    height: 70%;
+    border-radius: 1.4em;
+    margin: 3em;
+}
+
+.form-group{
+    width: 75%;
+    margin: auto;
+    margin-top: 1.5em;
+}
+
+form input {
+    height: 50px;
+    width: 250px;
+    padding-left: 8px;
+    border-radius: 1em;
+    background-color: #A7A7A7;
+    content: #121212;
+    border: none;
+}
+
+button {
+    background-color: #FFC000;
+    color:black;
+    height: 50px;
+    width: 250px;
+    border-radius: 1.3em;
+    border: none;
+}
+
+.social-options {
+    margin-top: 1em;
+    display: flex;
+}
+
+.social-options button {
+    background-color: #FFC000;
+    height: 50px;
+    width: 220px;
+}
+.circle {
+    margin: 30%;
+    margin-top: 10%;
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    background-color:#E3E3E3;  
+}
+a{
+    color: #FFC000;
+}
+.signup-container p{
+
+    margin-top: 3em;
+    margin-left: 20%;
+    font: 35px Roboto;
+}
+#align{
+    margin-left: 20%;
+}
