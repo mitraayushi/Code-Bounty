@@ -1,3 +1,9 @@
+## Project Brief
+
+CodeBounty is a competitive coding platform that distinguishes itself from existing platforms by integrating cryptocurrency rewards, fostering a decentralized and collaborative open-source community and leveraging blockchain partnerships for liquidity. 
+
+This combination of competitive coding with Web3 technology not only incentivizes participation but also educates and immerses developers in the blockchain ecosystem, creating a unique and forward-thinking environment for learning and innovation.
+
 ## TokenCreate
 
 1. 
