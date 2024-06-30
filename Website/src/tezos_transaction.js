@@ -3,10 +3,10 @@ const { InMemorySigner } = require('@taquito/signer');
 
 // Configuration
 const RPC_URL = 'https://ghostnet-tezos.giganode.io'; // Replace with appropriate RPC URL
-const PRIVATE_KEY = 'edsk...'; // Replace with your private key
-const TOKEN_CONTRACT_ADDRESS = 'KT1TnNiUToG2dacjhfBUZNm56HY65fh6GBVK'; // Replace with your token contract address
-const RECIPIENT_ADDRESS = 'KT1XD7f184pDm11rwarywiqHxcqG5zLbx3h7'; // Replace with the recipient's address
-const TOKEN_ID = 100; // Replace with the appropriate token ID
+const PRIVATE_KEY = 'edsk7a9e18286aea434360e5dafece6dc4c8ea346160d5e0bf9a5f99a915399c1f43'; // Replace with your private key
+const TOKEN_CONTRACT_ADDRESS = 'tz1L51Y2naZNYYZtM8i8QfcYtQFzhsvGUsbL'; // Replace with your token contract address
+const RECIPIENT_ADDRESS = 'KT1CdW1cWx4E6PkURN8zPRPhk32twVSTDAk4'; // Replace with the recipient's address
+const TOKEN_ID = 0; // Replace with the appropriate token ID
 const AMOUNT = 100; // Amount of tokens to transfer
 
 async function transferTokens() {

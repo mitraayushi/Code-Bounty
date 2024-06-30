@@ -3,7 +3,7 @@ import { TokenStandard, createAndMint, mplTokenMetadata } from '@metaplex-founda
 import { createUmi } from '@metaplex-foundation/umi-bundle-defaults';
 import secret from './guideSecret.json';
 
-const umi = createUmi('https://api.devnet.solana.com'); //Replace with your QuickNode RPC Endpoint
+const umi = createUmi('https://api.testnet.solana.com'); //Replace with your QuickNode RPC Endpoint
 
 const userWallet = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(secret));
 const userWalletSigner = createSignerFromKeypair(umi, userWallet);
