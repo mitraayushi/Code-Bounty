@@ -70,7 +70,7 @@ nav ul li a {
         .content .main-info {
             grid-column: span 1;
             background-color: #D9D9D9;
-            padding: 20px;
+            padding: px;
             border-radius: 8px;
             border: 2px solid; 
             height: 150px;
