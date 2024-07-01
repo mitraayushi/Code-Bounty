@@ -4,6 +4,8 @@ CodeBounty is a competitive coding platform that distinguishes itself from exist
 
 This combination of competitive coding with Web3 technology not only incentivizes participation but also educates and immerses developers in the blockchain ecosystem, creating a unique and forward-thinking environment for learning and innovation.
 
+For more details- https://bit.ly/CodeBountyDocumentation
+
 ## TokenCreate
 
 1. 
@@ -55,4 +57,4 @@ To start the application, run:
 node server.js
 ```
 
-Open your browser and navigate to `http://localhost:5000` to access Socratech.
+Open your browser and navigate to `http://localhost:5000` to access CodeBounty.
