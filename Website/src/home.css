@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: #f4f4f4;
 }
 
 header {
@@ -54,14 +54,14 @@ nav ul li a {
     color: black;
 }
 main {
-    background-color: white;
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .problem-of-the-day {
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -81,13 +81,14 @@ main {
 
 .problem-description {
     background-color: #e0e0e0;
+    padding: 1em;
     width: 80%;
     height: 60px;
     border-radius: 8px;
 }
 
 .problem-content button {
-    background-color: #0a0a5c;
+    background-color: BLACK;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -97,7 +98,7 @@ main {
 }
 
 .topic-wise-questions {
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -115,6 +116,7 @@ main {
 }
 
 .topic-box {
+    padding: 30px;
     background-color: #e0e0e0;
     width: 100%;
     height: 150px;

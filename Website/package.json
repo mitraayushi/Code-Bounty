@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "@solana/spl-token": "^0.4.7",
         "@solana/web3.js": "^1.94.0",
         "@taquito/remote-signer": "^20.0.1",
         "@taquito/rpc": "^20.0.1",
