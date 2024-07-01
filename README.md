@@ -57,4 +57,4 @@ To start the application, run:
 node server.js
 ```
 
-Open your browser and navigate to `http://localhost:5000` to access Socratech.
+Open your browser and navigate to `http://localhost:5000` to access CodeBounty.
