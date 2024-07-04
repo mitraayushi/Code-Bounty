@@ -1,7 +1,8 @@
+require('dotenv').config()
 import { Keypair } from "@solana/web3.js";
 
-const secret = [241,217,197,243,162,86,174,178,248,74,226,238,58,161,10,167,196,141,122,73,32,10,202,60,0,168,166,251,46,78,82,33,115,247,137,115,63,70,39,122,110,157,193,138,210,131,173,114,97,8,30,127,84,184,159,249,121,192,168,242,170,240,118,155]; // 👈 Replace with your secret
-const FROM_KEYPAIR = Keypair.fromSecretKey(new Uint8Array(secret));
+const secret =  process.env['privatekey']
+const FROM_KEYPAIR = Keypair.fromSecretKey(new Uint8Array(JSON.parse(`${secret}`)));
 console.log(`My public key is: ${FROM_KEYPAIR.publicKey.toString()}.`);
 
 import { getOrCreateAssociatedTokenAccount, createTransferInstruction } from "@solana/spl-token";
