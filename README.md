@@ -1,3 +1,9 @@
+## Quick Setup DevPod (Way 1)
+[![Watch the video](https://img.youtube.com/vi/Vqiz3JGFF7U/0.jpg)](https://www.youtube.com/watch?v=Vqiz3JGFF7U)
+
+## Quick Setup Normal Git Clone (Way 2)
+[![Watch the video](https://img.youtube.com/vi/90bdayFYhhE/0.jpg)](https://www.youtube.com/watch?v=90bdayFYhhE)
+
 ## Project Brief
 
 CodeBounty is a competitive coding platform that distinguishes itself from existing platforms by integrating cryptocurrency rewards, fostering a decentralized and collaborative open-source community and leveraging blockchain partnerships for liquidity. 
