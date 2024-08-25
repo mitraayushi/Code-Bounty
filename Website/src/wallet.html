@@ -1,63 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeBounty</title>
-    <link rel="stylesheet" href="wallet.css">
-</head>
-<body>
+    <link rel="stylesheet" href="wallet.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>CodeBounty</h1>
-            <nav>
-                <ul>
-                    <li><a href="/home.html">Home</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Profile</a></li>
-                </ul>
-            </nav>
-        </header>
-            <div class="wallet-section">
-                <div class="align">
-                <h2>Connect Wallet</h2>
-                <div class="x">
-                <form class="wallet-block" method="post"  action="/wallet">
-                    <div class=" form-group">
-                        <label for="blockchain">Blockchain</label>
-                        <select id="blockchain" name="blockchain">
-                            <option value="solana">Solana</option>
-                            <option value="tezos">Tezos</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Email/Username" class="field" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="wallet-address">Wallet Address</label>
-                        <input type="text" id="wallet-address" name="wallet-address" placeholder="Wall" class="field" required>
-                    </div>
+      <header>
+        <h1>CodeBounty</h1>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="landing.html">Explore</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="wallet-section">
+        <div class="align">
+          <h2>Connect Wallet</h2>
+          <div class="x">
+            <form class="wallet-block" method="post" action="/wallet">
+              <div class="form-group">
+                <label for="blockchain">Blockchain</label>
+                <select id="blockchain" name="blockchain">
+                  <option value="Edu-chain">Edu-chain</option>
+                  <option value="solana">Solana</option>
+                  <option value="tezos">Tezos</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Email/Username"
+                  class="field"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="wallet-address">Wallet Address</label>
+                <input
+                  type="text"
+                  id="wallet-address"
+                  name="wallet-address"
+                  placeholder="Wall"
+                  class="field"
+                  required
+                />
+              </div>
 
-                    <button type="submit" id="wallet" onclick="connectWallet()">Connect</button>
-                </form>
+              <!-- <button type="submit" id="wallet" onclick="connectWallet()">Connect</button> -->
+            </form>
+          </div>
+          <div class="x">
+            <div class="learn-more">
+              <h3>Learn More About Your Blockchain</h3>
+              <div>
+                <p class="expandable-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur a lorem vel est placerat aliquam. Quisque volutpat
+                  velit at felis ultricies, vitae varius purus scelerisque. Sed
+                  non turpis ac nisi varius tincidunt. Integer euismod libero at
+                  metus gravida, ac aliquet nisi efficitur. Nulla facilisi.
+                  Fusce euismod turpis nec ipsum dictum, ac ultrices lacus
+                  dignissim.
+                </p>
+                <p class="expandable-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur a lorem vel est placerat aliquam. Quisque volutpat
+                  velit at felis ultricies, vitae varius purus scelerisque. Sed
+                  non turpis ac nisi varius tincidunt. Integer euismod libero at
+                  metus gravida, ac aliquet nisi efficitur. Nulla facilisi.
+                  Fusce euismod turpis nec ipsum dictum, ac ultrices lacus
+                  dignissim.
+                </p>
+                <p class="expandable-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur a lorem vel est placerat aliquam. Quisque volutpat
+                  velit at felis ultricies, vitae varius purus scelerisque. Sed
+                  non turpis ac nisi varius tincidunt. Integer euismod libero at
+                  metus gravida, ac aliquet nisi efficitur. Nulla facilisi.
+                  Fusce euismod turpis nec ipsum dictum, ac ultrices lacus
+                  dignissim.
+                </p>
+              </div>
             </div>
-            <div class="x">
-                <div class="learn-more">
-                    <h3>Learn More About Your Blockchain</h3>
-                <div>
-                    <p class="expandable-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lorem vel est placerat aliquam. Quisque volutpat velit at felis ultricies, vitae varius purus scelerisque. Sed non turpis ac nisi varius tincidunt. Integer euismod libero at metus gravida, ac aliquet nisi efficitur. Nulla facilisi. Fusce euismod turpis nec ipsum dictum, ac ultrices lacus dignissim.
-                    </p>
-                    <p class="expandable-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lorem vel est placerat aliquam. Quisque volutpat velit at felis ultricies, vitae varius purus scelerisque. Sed non turpis ac nisi varius tincidunt. Integer euismod libero at metus gravida, ac aliquet nisi efficitur. Nulla facilisi. Fusce euismod turpis nec ipsum dictum, ac ultrices lacus dignissim.
-                    </p>
-                    <p class="expandable-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lorem vel est placerat aliquam. Quisque volutpat velit at felis ultricies, vitae varius purus scelerisque. Sed non turpis ac nisi varius tincidunt. Integer euismod libero at metus gravida, ac aliquet nisi efficitur. Nulla facilisi. Fusce euismod turpis nec ipsum dictum, ac ultrices lacus dignissim.
-                    </p>
-                </div>
-                </div>
-                <div class="current-cbt">
+            <!-- <div class="current-cbt">
                     <div class="x">
                     <div>
                         <label for="cbt">CBT</label>
@@ -67,21 +100,65 @@
                         <label for="inr">INR</label>
                         <input type="text" id="inr" name="inr">
                     </div>
-                </div>
-                    <p>Your current CBT:</p>
-                    <button type="button">Withdraw</button>
+                </div> -->
+                <div>
+              <div style="margin-left: 40px;">
+                <p>Your current CBT:</p>
+                <p id="balance">10</p>
+              </div>
+              <button type="button" style="height: 30px; margin-left: 40px;" id="withdraw-bttn">
+                Withdraw
+              </button>
             </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </div>
-</div>
     <script>
-        function connectWallet() {
-            var connectButton = document.getElementById('connect-button');
-            connectButton.textContent = 'Connected';
-            connectButton.style.backgroundColor = 'green';
-        }
+      function connectWallet() {
+        var connectButton = document.getElementById("connect-button");
+        connectButton.textContent = "Connected";
+        connectButton.style.backgroundColor = "green";
+      }
     </script>
-</body>
+    <script>
+      const withdrawBttn = document.getElementById("withdraw-bttn");
+      const amountEle = document.getElementById("balance");
+      const addressEle = document.getElementById("wallet-address");
+      const amount = amountEle.innerText;
+        // localStorage.setItem("balance", 90)
+      const claimAmt = localStorage.getItem("balance");
+      console.log(claimAmt);
+
+      const initiateWithdraw = (amount) => {
+        console.log("hewlloo withdraw initiated");
+        fetch("http://localhost:9000/withdraw", {
+          method: "POST", // Specify the method
+          headers: {
+            "Content-Type": "application/json", // Specify that you're sending JSON data
+          },
+          body: JSON.stringify({ claimAmt: amount, clientAddress: addressEle.value }), // Convert the data to a JSON string
+        })
+          //   .then((response) => {
+          //     if (!response.ok) {
+          //       throw new Error("Network response was not ok");
+          //     }
+          //     return response.json(); // Parse the JSON from the response
+          //   })
+          .then(() => {
+            console.log("Success:", "data"); // Handle the response data
+            localStorage.setItem("balance", 0);
+          })
+          .then(() => {
+            console.log(amount);
+            
+            amountEle.innerText = 0;
+          })
+          .catch((error) => {
+            console.error("Error:", error); // Handle any errors
+          });
+      };
+      withdrawBttn.onclick = () => initiateWithdraw(amount);
+    </script>
+  </body>
 </html>

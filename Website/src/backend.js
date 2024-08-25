@@ -419,7 +419,19 @@ const createApp1 = () => {
 
     next();
   });
-
+  app.post("/withdraw",async (req, res) => {
+    console.log(req.body, "=============");
+    const { clientAddress, claimAmt } = req.body;
+    const template = `export const walletAddress = "${clientAddress}";
+    export const claimableAmt = ${claimAmt};`;
+    fs.writeFileSync("./receiver.ts", template);
+    if(claimAmt > 0) {
+      await runDeployTransfer();
+    }
+    console.log("023948,============");
+    res.send(JSON.stringify({ transaction: "success" }));
+  });
+  
   app.get("/ide", (req, res) => {
     res.sendFile(`${ROOT_DIR}/src/code_editor.html`);
   }); 
@@ -516,4 +528,3 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 };
 
 module.exports = { createApp1 };
-// console.log("ccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" , cwd)
